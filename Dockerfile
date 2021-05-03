@@ -2,8 +2,8 @@ FROM alpine
 LABEL maintainer="Nicolas Guillaumin <nicolas+docker@guillaumin.me>"
 
 RUN apk add --no-cache build-base
-RUN wget -q http://server.owl.de/~frank/tags/vasm1_8i.tar.gz
-RUN tar xzvf vasm1_8i.tar.gz
+RUN wget -q http://server.owl.de/~frank/tags/vasm1_8j.tar.gz
+RUN tar xzvf vasm1_8j.tar.gz
 
 WORKDIR vasm
 RUN for CPU in 6502 6800 arm c16x jagrisc m68k ppc test tr3200 vidcore x86 z80; do\
